@@ -1,11 +1,13 @@
+/* 02 Introduction to Web Design with Bootstrap */
+
 p {
-    color: blue;
+  color: blue;
 }
 
 .block {
-    color: black;
-    background: darkorange;
-    outline-style: solid;
-    outline-color: lightgreen;
-    outline-width: thick;
+  color: black;
+  background: darkorange;
+  outline-style: solid;
+  outline-color: lightgreen;
+  outline-width: thick;
 }
