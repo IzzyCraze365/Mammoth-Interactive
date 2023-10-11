@@ -1,0 +1,43 @@
+body {
+  font-size: 50px;
+  font-family: sans-serif;
+  margin: 10px;
+  text-align: center; /* centers the words on the page */
+}
+
+#container {
+  position: fixed;
+  width: 100%;
+  bottom: 70%; /* 100 is top of page, 0 is bottom */
+}
+
+#movingContent {
+  height: 150px;
+  overflow: hidden; /* hides words to give the illusion of motion */
+}
+
+#movingContent > div > div {
+  display: inline-block;
+  height: 50%;
+  padding: 5px;
+  margin-bottom: 20px; /* this spaces out the words */
+}
+
+#movingContent div:first-child {
+  animation: show 10s linear infinite;
+}
+
+@keyframes show {
+  0% {
+    margin-top: 0px;
+  } /* same as last 100% value to loop */
+  70% {
+    margin-top: -650px;
+  }
+  90% {
+    margin-top: -650px;
+  }
+  100% {
+    margin-top: 0px;
+  } /* same as first 0% value to loop */
+}
