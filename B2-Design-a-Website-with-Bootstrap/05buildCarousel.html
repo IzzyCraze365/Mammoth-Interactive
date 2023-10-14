@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- 04 Build a Nav -->
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>04 Build a Nav</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="04buildNav.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="50"
+        height="100%"
+        fill="currentColor"
+        class="bi bi-cake"
+        viewBox="0 0 16 16"
+      >
+        <!-- the height (100%) is linked to the width (pixels) -->
+        <path
+          d="m7.994.013-.595.79a.747.747 0 0 0 .101 1.01V4H5a2 2 0 0 0-2 2v3H2a2 2 0 0 0-2 2v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a2 2 0 0 0-2-2h-1V6a2 2 0 0 0-2-2H8.5V1.806A.747.747 0 0 0 8.592.802l-.598-.79ZM4 6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v.414a.911.911 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.911.911 0 0 1 4 6.414V6Zm0 1.414c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56V9H4V7.414ZM1 11a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.793l-.354.354a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793V11Zm11.646 1.854a1.915 1.915 0 0 0 2.354.279V15H1v-1.867c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0Z"
+        />
+      </svg>
+
+      <button
+        class="navbar-toggler"
+        tyoe="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+        <!-- Bootstrap class that auto creates the toggle button -->
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <!-- "ml-auto" makes the links justified to right of the page. mr-auto justifies to the left. This is found in Bootstrap documentation -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services-overview">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#featured-products-carousel"
+              >Featured Products</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      id="services-overview"
+      class="py-5 text-center block block-1 full-page"
+    >
+      <!-- For Padding in Bootstrap "p-1" is min, "p-5" is Max -->
+      <div class="p-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100%"
+          fill="currentColor"
+          class="bi bi-cake"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="m7.994.013-.595.79a.747.747 0 0 0 .101 1.01V4H5a2 2 0 0 0-2 2v3H2a2 2 0 0 0-2 2v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a2 2 0 0 0-2-2h-1V6a2 2 0 0 0-2-2H8.5V1.806A.747.747 0 0 0 8.592.802l-.598-.79ZM4 6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v.414a.911.911 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.911.911 0 0 1 4 6.414V6Zm0 1.414c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56V9H4V7.414ZM1 11a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.793l-.354.354a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793V11Zm11.646 1.854a1.915 1.915 0 0 0 2.354.279V15H1v-1.867c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0Z"
+          />
+        </svg>
+      </div>
+      <h1 class="p-5">Company Name</h1>
+      <p class="lead">
+        Put your comapny description here, with calls to action and an incentive
+        ti sign up to your newsletter or contact you.
+      </p>
+      <!-- The Class "Lead" makes the text bigger. -->
+      <a
+        href="#featured-products-carousel"
+        class="btn btn-primary my-5 px-4 py-2"
+        >Learn More -></a
+      ><!-- the BTN is a button bootstrap class, the followup are the colorings. -->
+      <!-- "my-5" = margin of Y axis, margin is outside the element -->
+      <!-- "px-5" = padding of X axis, padding is inside the element -->
+      <!-- "py-2" = padding of Y axis, padding is inside the element -->
+    </div>
+
+    <div
+      id="featured-products-carousel"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <!-- WORKING IN HERE FOR THIS SECTION -->
+      <ol class="carousel-indicators">
+        <li
+          data-target="#featured-products-carousel"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#featured-products-carousel" data-slide-to="1"></li>
+        <li data-target="#featured-products-carousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active image container">ITEM 1</div>
+        <!-- item 1 -->
+
+        <div class="carousel-item image container">Item 2</div>
+        <!-- item 2 -->
+
+        <div class="carousel-item image container">3 Item</div>
+        <!-- item 3 -->
+      </div>
+      <!-- carousel -->
+    </div>
+    <!-- featured products -->
+
+    <div id="services"></div>
+
+    <section id="contact" class="contact"></section>
+
+    <footer></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
