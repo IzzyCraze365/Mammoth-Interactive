@@ -1,0 +1,60 @@
+/* 09 Add Row And Column */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.block {
+  color: white;
+  background-color: black;
+  align-content: center;
+  padding: 5%; /*! Percents are friendly for all screen sizes, while pixels are not */
+}
+
+.block-1 {
+  background-color: #324376;
+}
+
+.block-2 {
+  background-color: #586ba4;
+}
+
+.block-3 {
+  background-color: #f76c5e;
+}
+
+.full-page {
+  height: 100vh; /* viewport height, which is very similar to the window size */
+}
+
+.carousel-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  background-size: cover; /* This will NOT stretch the  image */
+}
+
+.carousel-placeholder-1 {
+  background-color: #f76c5e;
+}
+
+.carousel-placeholder-2 {
+  background-color: #324376;
+}
+
+.carousel-placeholder-3 {
+  background-color: #586ba4;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+#featured-products-carousel {
+  width: 100%;
+  margin: 0 auto;
+}
