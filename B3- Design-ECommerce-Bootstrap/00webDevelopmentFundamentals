@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- Design an ECommerce Website with Bootstrap -->
+<!-- 01 Web Development Fundamentals -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>01 Web Development Fundamentals</title>
+    <style>
+p {
+    color:blue;
+}
+    </style>
+  </head>
+  <body>
+    <h1>
+    Site Title.
+    </h1>
+    <p class="p-2">Welcome.</p>
+
+  </body>
+</html>
