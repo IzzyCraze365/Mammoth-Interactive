@@ -21,11 +21,62 @@
       p {
         color: white;
       }
+
+      header {
+        position: relative;
+        background-color: black;
+        height: 100%;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      header img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        /* elements have a z-index of 1 by default, setting to 0 pushes to background, setting to 2 pulls it to foreground */
+
+        -ms-transform: translateX(-50%) translateY(50%);
+        /* Safari Browser */
+        -webkit-transform: translateX(-50%) translateY(50%);
+        /* Webkit Browser */
+        -moz-transform: translateX(-50%) translateY(50%);
+        /* Mozilla Firefox Browser */
+        transform: translateX(-50%) translateY(50%);
+        /* Browser Adjustments*/
+      }
     </style>
   </head>
 
   <body>
-    <header></header>
+    <!-- TODO Working Here -->
+    <header>
+      <div class="overlay"></div>
+      <img
+        src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1720&q=80"
+      />
+      <!-- Copyright Free Images on Unsplash & Pixabay -->
+      <!-- You can right-click to Open Image in new Tab and save the URL Link for that Image -->
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100">
+            <h1 class="display-3 text-white">Unlimited Online Courses!</h1>
+            <p class="lead mb-0">Watch anywhere. Advance your career.</p>
+            <p>
+              <a href="#checkout" class="btn btn-primary my-5 px-4 py-2"
+                >Enroll Now ></a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <div class="pricing-header"></div>
 
