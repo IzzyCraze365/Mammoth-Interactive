@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!-- Design an ECommerce Website with Bootstrap -->
-<!-- 07 Build A Billing Information Section -->
+<!-- 08 Build Address Selection Fields -->
 <html>
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>07 Build A Billing Information Section</title>
+  <title>08 Build Address Selection Fields</title>
 
   <!-- CSS -->
   <style>
@@ -162,7 +162,6 @@
           </div>
         </form>
       </div>
-      <!-- TODO Working Here -->
       <div class="col-md-8 order-md-1">
         <h4 class="mb-3">
           Billing Address
@@ -186,11 +185,50 @@
             <input type="text" class="form-control" id="address">
             <label for="address">Address</label>
           </div>
+          <!-- TODO Working Here -->
           <div class="row">
             <div class="col-md-5 mb-3">
               <!-- This will be a selection of State and Country which will be a drop down menu- JavaScript will run this -->
+              <label for="country">
+                Country
+              </label>
+              <select class="custom select d-block w-100" id="country">
+                <option value="">Choose...</option>
+                <option>United States</option>
+                <option>Canada</option>
+                <option>England</option>
+                <option>Mexico</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">
+                State
+              </label>
+              <select class="custom select d-block w-100" id="state">
+                <option value="">Choose...</option>
+                <option>New York</option>
+                <option>New Jersey</option>
+                <option>California</option>
+                <option>Maine</option>
+                <option>Vermont</option>
+              </select>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zipcode">Zipcode</label>
+              <input type="text" class="form-control" id="zipcode">
             </div>
           </div>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="same-address">
+        <label class="custom-control-label" for="same-address">Shippiing Address is the same asmy Billing
+          Address</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="save-information">
+        <label for="save-information" class="custom-control-label">
+          Save My Address
+        </label>
       </div>
       </form>
     </div>
