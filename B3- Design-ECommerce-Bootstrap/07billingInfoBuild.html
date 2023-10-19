@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!-- Design an ECommerce Website with Bootstrap -->
-<!-- 06 Build A Checkout Page -->
+<!-- 07 Build A Billing Information Section -->
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>06 Build A Checkout Page</title>
+    <title>07 Build A Billing Information Section</title>
 
     <!-- CSS -->
     <style>
@@ -54,8 +54,7 @@
 
       header .container {
         position: relative;
-        z-index: 2;
-        /* elements have a z-index of 1 by default, setting to 0 pushes to background, setting to 2 pulls it to foreground */
+        z-index: 2; /* elements have a z-index of 1 by default, setting to 0 pushes to background, setting to 2 pulls it to foreground */
       }
 
       header .overlay {
@@ -129,7 +128,6 @@
       </div>
     </div>
 
-    <!-- TODO Working Here -->
     <div id="checkout">
       <div class="header">
         <h2 class="display-4">Checkout</h2>
@@ -168,6 +166,38 @@
               />
               <div class="input-group-append">
                 <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- TODO Working Here -->
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">
+            Billing Address
+          </h4>
+          <form>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" id="firstName" required>
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" id="lastName" required>
+                <label for="lastName">Last Name</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" required>
+              <label for="email">E-mail</label>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="address">
+              <label for="address">Address</label>
+            </div>
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <!-- This will be a selection of State and Country which will be a drop down menu- JavaScript will run this -->
+                </div>
               </div>
             </div>
           </form>
